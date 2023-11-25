@@ -17,6 +17,21 @@
             color: #fff;
             padding: 10px;
             text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .header-photo {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            position: absolute;
+            top: 10px;
+            left: 10px;
         }
 
         nav {
@@ -46,7 +61,7 @@
         .chat-button {
             display: inline-block;
             padding: 15px 30px;
-            font-size: 18px;
+            font-size: 13px;
             background-color: #007bff;
             color: #fff;
             text-decoration: none;
@@ -58,27 +73,47 @@
         .chat-button:hover {
             background-color: #0056b3;
         }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-link {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Hii I Am yarisingu Tarun</h1>
+        <h1>Chat App</h1>
+        <img src="your-profile-image.jpg" alt="Profile Photo" class="header-photo">
     </header>
 
     <nav>
         <a href="#home" class="chat-button">Home</a> |
         <a href="#about" class="chat-button">About</a> |
         <a href="#docs" class="chat-button">Docs</a> |
-        <a href="#chat" class="chat-button">Join the Chat</a> |
         <a href="#login" class="chat-button">Login</a> |
-        <a href="#signup" class="chat-button">Signup</a> 
-        
+        <a href="#signup" class="chat-button">Signup</a> |
+        <a href="#chat" class="chat-button">Join the Chat</a>
     </nav>
 
     <section id="home">
         <h2>Welcome to Home</h2>
-        <h3> i am yarasingu Tarun a Full stack Developer and working on ai logic creation </h3>
         <p>This is the home section of the chat app. Customize it as needed.</p>
     </section>
 
@@ -95,6 +130,13 @@
     <section>
         <a href="#chat" class="chat-button">Join the Chat</a>
     </section>
+
+    <footer>
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">Instagram</a>
+        <!-- Add more social media links as needed -->
+    </footer>
 
 </body>
 </html>
