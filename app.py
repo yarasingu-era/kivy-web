@@ -21,6 +21,11 @@ class User(UserMixin, db.Model):
 def load_user(user_id):
     return User.query.get(int(user_id))
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -31,6 +36,8 @@ def login():
             login_user(user)
             return redirect(url_for('dashboard'))
     return render_template('login.html')
+
+
 
 @app.route('/dashboard')
 @login_required
