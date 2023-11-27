@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:2F3c5ABd451df1eg*1cfc4g6eGDa23CA@roundhouse.proxy.rlwy.net:31921/railway"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:EDCDfagGB*A3GadfB5f5FAcCG1a1Cg3a@monorail.proxy.rlwy.net:10570/railway"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'your_secret_key'  # Change this to a random secret key
 
